@@ -1,0 +1,109 @@
+body {
+    font-family: 'Changa', sans-serif;
+    background-color: rgb(64, 64, 64);
+}
+
+.chatBox {
+    margin: 0 auto;
+    width: 50%;
+    padding: 12px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+}
+
+.chatBox h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.chatMessages {
+    height: 420px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+
+.newchat {
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.chatmsg {
+    max-width: 100%;
+    width: 50%;
+    padding: 8px;
+    margin: 8px 18px;
+    border-radius: 6px;
+    background-color: rgb(128, 128, 128);
+}
+
+.answer {
+    justify-content: left;
+}
+
+.answer .chatmsg {
+    background-color: rgb(68, 188, 86);
+}
+
+.asking {
+    justify-content: right;
+}
+
+.asking .chatmsg {
+    background-color: rgb(34, 115, 213);
+}
+
+.writeMsg {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 6px;
+    padding: 4px;
+}
+
+.writeMsg form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.writeMsg form input, .writeMsg form button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.writeMsg form input {
+    width: 80%;
+}
+
+.writeMsg form button {
+    width: 15%;
+    cursor: pointer;
+}
+
+.suggestionMessages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.suggestion {
+    margin: 6px;
+    padding: 6px;
+    background-color: grey;
+    border-radius: 6px;
+    color: #fff;
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+    outline-width: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.suggestion:hover {
+    background-color: rgb(113, 113, 113);
+    outline: 1px solid #fff;
+}

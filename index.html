@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chatBox">
+        <h2>Demande de l'aide à Helpy !</h2>
+        <div class="chatMessages"></div>
+        <div class="writeMsg">
+            <form>
+                <input type="text" id="userMsg" placeholder="Saisir un message">
+                <button>Envoyer</button>
+            </form>
+        </div>
+        <div class="suggestionMessages">
+            <div class="suggestion" data-suggestion="github">Github</div>
+            <div class="suggestion" data-suggestion="talk">Demander un conseiler</div>
+            <div class="suggestion" data-suggestion="money">Fructifier</div>
+            <div class="suggestion" data-suggestion="account">Créer un compte</div>
+        </div>
+    </div>
+</body>
+</html>
