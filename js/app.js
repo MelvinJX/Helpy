@@ -1,4 +1,3 @@
-const usedId = [];
 const validAnswers = [
     {name: "github", valids: ["github", "git", "hub"], answer: 
         "Github est un environnement de travail pour développeur...",
