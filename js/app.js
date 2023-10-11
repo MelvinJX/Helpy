@@ -4,7 +4,8 @@ const validAnswers = [
     additional: `\n<a href="https://github.com/" target="_blank">Visiter Github</a>`
     },
     {name: "talk", valids: ["parler", "conseiller", "aide", "help"], answer:
-        "Souhaitez vous parler à un conseiller ?"
+        "Souhaitez vous parler à un conseiller ?",
+    additional: `\n<button>Oui</button>\n<button>Non</button>`
     },
     {name: "money", valids: ["fructifier", "argent"], answer:
         "Fructifier son argent est l'un des moyens pour..."
@@ -17,6 +18,19 @@ const validAnswers = [
         "Hey ! Je suis Helpy, pas vraiment une IA mais juste un petit robot 🤖 simple qui pourrait faciliter la navigation aux utilisateurs 😁"
     }
 ];
+
+const rightBox = document.querySelector(".rightBox");
+let result = "";
+validAnswers.forEach(item => {
+    item.valids.forEach(question => {
+            result += `
+            <div class="question">
+                <span>${question}</span>
+            </div>
+            `
+    })
+})
+rightBox.innerHTML = `<h4>Questions à poser</h4>` + result;
 
 let next = 0;
 let intervalActive = false;

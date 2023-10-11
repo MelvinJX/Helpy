@@ -13,21 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="chatBox">
-        <h2>Bonjour, je suis Helpy !</h2>
-        <div class="chatMessages"></div>
-        <div class="writeMsg">
-            <form>
-                <input type="text" id="userMsg" placeholder="Saisir un message">
-                <button>Envoyer</button>
-            </form>
+    <div class="container">
+        <div class="chatBox">
+            <h2>Bonjour, je suis Helpy !</h2>
+            <div class="chatMessages"></div>
+            <div class="writeMsg">
+                <form>
+                    <input type="text" id="userMsg" placeholder="Saisir un message">
+                    <button>Envoyer</button>
+                </form>
+            </div>
+            <div class="suggestionMessages">
+                <div class="suggestion" data-suggestion="github">Github</div>
+                <div class="suggestion" data-suggestion="talk">Demander un conseiler</div>
+                <div class="suggestion" data-suggestion="money">Fructifier</div>
+                <div class="suggestion" data-suggestion="account">Créer un compte</div>
+            </div>
         </div>
-        <div class="suggestionMessages">
-            <div class="suggestion" data-suggestion="github">Github</div>
-            <div class="suggestion" data-suggestion="talk">Demander un conseiler</div>
-            <div class="suggestion" data-suggestion="money">Fructifier</div>
-            <div class="suggestion" data-suggestion="account">Créer un compte</div>
-        </div>
+        <div class="rightBox"></div>
     </div>
 </body>
 </html>
